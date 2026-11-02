@@ -1,0 +1,43 @@
+name: Focused improvement
+description: Propose a change with a concrete use case and acceptance criteria.
+title: "[Proposal]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read docs/ROADMAP.md first. Current priorities are detail preservation,
+        topology-safe smoothing, glyph placement, one-character labels,
+        reproducible builds and UI performance. Do not attach private material or logs.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What cannot you do today? Describe the actual workflow and affected users.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Keep the scope small. Note any roadmap area, file-format changes or new dependencies.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: How would we verify it?
+      description: Give observable acceptance criteria and a safe synthetic example where useful. Separate requirements from assumptions.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and tradeoffs
+      description: Consider visual fidelity, readable print size, performance, compatibility and licensing where relevant.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Before submitting
+      options:
+        - label: I reviewed the roadmap and existing issues, and this proposal contains no private data or material I cannot redistribute.
+          required: true

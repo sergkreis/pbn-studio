@@ -1,0 +1,52 @@
+name: Bug report
+description: Report a reproducible application, build or export problem.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For visual fidelity or label placement, use the visual-quality form.
+        For vulnerabilities, follow SECURITY.md instead of posting details here.
+        Do not upload user artwork, paid book pages, private projects, raw logs,
+        decompiled material, credentials or private network addresses.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Revision and environment
+      description: Source revision or release, Windows version, Python/Qt versions, and Rust/toolchain or worker details if relevant. Omit personal paths.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Minimal reproduction
+      description: Exact steps or commands and settings. Prefer a small procedural input; describe missing prerequisites honestly.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include a short sanitized error description and exit code if applicable. Do not paste or attach raw logs.
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Checks and scope
+      description: What did you test? List actual results and anything skipped, blocked or not run. Distinguish source from packaged behavior.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safe public report
+      options:
+        - label: I checked for existing issues and removed private data, raw logs and material I cannot redistribute.
+          required: true
+        - label: This report contains no vulnerability details; I will use SECURITY.md for security concerns.
+          required: true

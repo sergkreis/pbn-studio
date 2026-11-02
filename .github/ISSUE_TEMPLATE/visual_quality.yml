@@ -1,0 +1,67 @@
+name: Visual quality or label placement
+description: Help preserve details, improve boundaries or place readable labels.
+title: "[Quality]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Visual quality is unresolved in this early preview. A small generated example
+        with exact settings is more useful than an entire book or private project.
+        Do not upload user artwork, paid book pages, private projects or raw logs.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Main problem
+      options:
+        - Segmentation or lost detail
+        - Boundary smoothing or topology
+        - Label placement or readability
+        - Palette or color mapping
+        - Preview and export disagree
+        - Other visual problem
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Revision and environment
+      description: Source revision/release, Windows and Qt versions; worker revision/hash if known.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Public reproduction
+      description: Provide a small procedural input or generation steps, image dimensions, palette size, speckle and simplification settings.
+    validations:
+      required: true
+  - type: textarea
+    id: print_settings
+    attributes:
+      label: Print and geometry settings
+      description: Page size and margins in mm, preferred/minimum label size, line width, smooth/pixel geometry mode, and any simplification or leader settings. Say unknown if needed.
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Expected and actual result
+      description: Which feature is lost or unreadable? Explain the difference; include only safe generated before/after examples. Fewer errors alone do not prove better quality.
+    validations:
+      required: true
+  - type: textarea
+    id: surfaces
+    attributes:
+      label: Where does it occur?
+      description: Preview, reopened project, SVG, PDF, PNG or a physical print? Include preflight issue types and whether export was normal or diagnostic. Mark untested paths.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safe public example
+      options:
+        - label: My reproduction contains no user artwork, private projects, paid book pages, raw logs or sensitive data.
+          required: true
+        - label: I have permission to redistribute any supplied example and have stated its source or generation method.
+          required: true

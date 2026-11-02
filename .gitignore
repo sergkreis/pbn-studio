@@ -1,0 +1,53 @@
+# Python и локальные окружения
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+# Генерируемые результаты; build/*.py — исходники, НЕ исключать
+/reports/
+/releases/
+/dist/
+/build/work/
+/build/dist/
+/build/spec/
+*.spec
+# Native: исходники, Cargo.toml и Cargo.lock остаются в Git
+/native/cargo-home/
+/native/target/
+/native/toolchain.json
+/native/PROVENANCE.json
+/vendor/**/target/
+/vendor/**/node_modules/
+/assets/worker/*.exe
+/assets/worker/build-receipt.json
+/assets/worker/dependency-tree.txt
+/assets/worker/licenses/Rust-COPYRIGHT*.html
+# Иллюстрации и рекламные примеры upstream, не Rust и не golden-тесты
+/vendor/vtracer/docs/assets/
+/vendor/vtracer/docs/images/
+# Секреты, локальная диагностика и пользовательские данные
+.env
+.env.*
+!.env.example
+*.log
+/logs/
+**/journal-*.jsonl*
+/cache/
+/.cache/
+/local-data/
+*.pbn
+*.pbnx
+*.tmp
+# IDE / ОС
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

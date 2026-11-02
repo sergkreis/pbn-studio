@@ -1,0 +1,34 @@
+# Единый LF для текста; бинарные данные не нормализовать
+* text=auto eol=lf
+*.py text eol=lf
+*.rs text eol=lf
+*.toml text eol=lf
+*.lock text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.svg text eol=lf
+*.ps1 text eol=lf
+*.sh text eol=lf
+*.exe binary
+*.dll binary
+*.pyd binary
+*.lib binary
+*.zip binary
+*.7z binary
+*.pbn binary
+*.pbnx binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.bmp binary
+*.ico binary
+*.pdf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.u32le binary

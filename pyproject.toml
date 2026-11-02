@@ -1,0 +1,10 @@
+[project]
+name = "pbn-studio"
+version = "0.2.1rc2"
+license = "GPL-3.0-only"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = ["PySide6>=6.8,<7", "numpy>=2,<3", "scipy>=1.14,<2", "Pillow>=11,<13"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
