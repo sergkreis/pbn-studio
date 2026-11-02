@@ -65,3 +65,7 @@ Upstream VTracer закреплён на **`2500df76b5aea0ac22d15296b22722442f82
 - Внешние licensed artwork/fixtures не входят в checkout; ограничения tests описаны отдельно.
 - Не заявляется побитовая воспроизводимость PyInstaller-архива: фиксируются конкретные входы и выходные хеши.
 - Qt/PySide6, Rust dependencies и шрифты требуют notices и проверки права распространения. Не удаляйте существующие лицензии. Arial — системное предусловие, не включённый в пакет шрифт.
+
+## Console encoding
+
+On non-Russian Windows, use `$env:PYTHONUTF8 = "1"` before running Python commands. The application help currently contains Russian text; redirected cp1252 output cannot encode it. Public CI explicitly uses UTF-8.
